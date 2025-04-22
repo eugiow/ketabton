@@ -1,0 +1,412 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+
+body{
+   background-color: #0d141d;
+}
+
+
+/* تنظیم فونت‌ها */
+@font-face {
+  font-family: Parastoo;
+  src: url('../font/Parastoo.eot');
+  src: url('../font/Parastoo.eot?#iefix') format('eot'),
+       url('../font/Parastoo.woff') format('woff'),
+       url('../font/Parastoo.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: vazir;
+  src: url('../font/vazir-font-v18.0.0/Vazir-Bold.eot');
+  src: url('../font/vazir-font-v18.0.0/Vazir.eot?#iefix') format('eot'),
+       url('../font/vazir-font-v18.0.0/Vazir-Bold.woff') format('woff'),
+       url('../font/vazir-font-v18.0.0/Vazir-Bold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+  .font{
+    font-family: vazir;
+  }
+  .a{
+    text-decoration: none;
+  }
+
+
+/* header */
+.back-head{
+  width: 97%;
+  height: 550px;
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 100%, 0 80%);
+  overflow: hidden;
+  border-radius: 15px;
+}
+
+   /* slide-intro */
+   .slid-intro img{
+    border-radius: 15px;
+  }
+
+
+
+  /* side menu */
+
+  .sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    border-left:2px solid #fff ;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    font-family: vazir;
+  }
+
+  .sidenav a {
+    text-decoration: none;
+    color: #b7b7b7;
+    display: block;
+    transition: 0.3s;
+
+  }
+  
+  .sidenav a:hover {
+    color: #3c8083;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    left: 10px;
+    font-size: 36px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+
+
+/*/////////////////////////////////////////////////*/
+
+/* author */
+
+  .text-author{
+    font-family: vazir;
+    line-height: 14px;
+    color: #dedede;
+  }
+
+  .text-author h4{
+    margin: 0;
+    color: #dedede;
+  }
+  .text-author p{
+    height: 40px;
+    direction: rtl;
+    overflow-y: scroll;
+    color: #c1c1c1;
+    font-size: 12px;
+    text-align: justify;
+    margin-right: 10px;
+    
+
+  }
+  .text-author p::-webkit-scrollbar{
+    width: 2px;
+    background-color: #1E2734;
+  }
+
+  .text-author p::-webkit-scrollbar-thumb {
+    width: 5px;
+    background: #3f4f65; 
+    border-radius: 16px;
+    
+  }
+  
+  .btn-author a{
+    text-decoration: none;
+    font-family: vazir; 
+    font-size: 12px;
+  }
+
+
+
+
+
+/* your  books */
+
+.reaction-like:hover{
+  color: red;
+}
+.reaction-save:hover{
+  color: rgb(0, 213, 255);
+}
+.your-book-date p{
+  font-family: vazir;
+  color: #c1c1c1;
+  font-weight: bold;
+  line-height: 12px;
+  font-size: smaller;
+  margin: 0;
+}
+.your-book-name {
+font-family: vazir;
+color: #fff;
+line-height: 12px;
+text-align: right;
+}
+.your-book-name h4{
+  margin: 0px;
+  }
+  .your-book-name a{
+    display:inline-block;
+    text-decoration: none;
+    font-size: 12px;
+    margin-top: 5px;
+    }
+    .your-book-name a:hover{
+      color: #cfcfcf;
+    }
+
+    .your-book-img img{
+      border-radius: 15px;
+    }
+
+
+    .cover-your-text-body{
+      font-family: vazir;
+      direction: rtl;
+    }
+    .cover-your-text-body h4{
+      font-weight: 900;
+      padding: 0;
+      color: #31D2F2;
+    }
+    .cover-your-text-body p{
+      color:#c1c1c1;
+      margin: 0;
+      text-align: justify;
+      line-height:1.5rem;
+    }
+
+
+    .your-text-body{
+      direction: rtl;
+      overflow-y: scroll;
+      font-family: vazir;
+    }
+
+
+    .your-text-body::-webkit-scrollbar{
+      width: 4px;
+      background-color: #dfdfdf;
+    }
+  
+    .your-text-body::-webkit-scrollbar-thumb {
+      width: 7px;
+      background: #56aec0; 
+      border-radius: 16px;
+      
+    }
+
+
+ .footer-link li{
+ margin-right: 15px;
+ }
+
+ .footer-link li a{
+  text-decoration: none;
+  color: #3f4f65;
+  font-family: vazir;
+  font-size: 10px;
+ }
+ .footer-link li a:hover{
+  transition: all 0.5s;
+  color: #0d0f13;
+ }
+
+ .us-img a{
+  margin-right: 5px;
+  margin-left: 5px;
+text-decoration: none;
+color: #0d0f13;
+font-size: 2rem;
+ }
+ .insta:hover{
+  color: #d53b3b;
+ }
+ .tele:hover{
+  color: #3b61d5;
+ }
+
+
+
+ /* users */
+
+
+  .menu-right li:hover {
+      transition: all 0.2s;
+  }
+
+  .menu-right li a{
+  text-decoration: none;
+  color: rgb(193, 193, 193);
+  font-family: vazir;
+  display: block;
+  margin-right:1rem ;
+  }
+  .menu-right li a i{
+      margin-left: 10px;
+  }
+
+  .profil-body{
+      border-radius: 15px;
+      box-shadow: rgba(77, 77, 77, 0.24) 0px 3px 8px;
+      background-color: #0d141d;
+  }
+
+  .profil-body-name{
+      font-family: vazir;
+      font-size:small;
+      color: #c1c1c1;
+  }
+
+
+  .font-sm{
+      font-family: vazir;
+      font-size: small;
+  }
+  .font-smer{
+      font-family: vazir;
+      font-size: 10px;
+  }
+  .font-lg{
+      font-family: vazir;
+      font-size: large;
+  }
+  
+  
+  .list-sc{
+      overflow-y: auto; /* فعال کردن اسکرول عمودی */
+      scrollbar-width: thin; /* ضخامت باریک برای اسکرول در مرورگرهای Firefox */
+      scrollbar-color: #7FFFD4 #1e273405; /* رنگ‌های اسکرول و پس‌زمینه */
+      border-radius: 20px;
+  }
+  .list-sc::-webkit-scrollbar-track {
+      background: #1e273400; /* پس‌زمینه اسکرول */
+  }
+  
+  .list-sc::-webkit-scrollbar-thumb {
+      background-color: #7FFFD4; /* رنگ دسته اسکرول */
+      border-radius: 20px;
+
+  }
+  
+
+  
+
+/* حالت موبایل */
+@media (max-width: 767px) {
+  #menuRight {
+      z-index: 50; /* به منو لایه بالاتری نسبت به محتوای دیگر بدهید */
+      position: fixed; /* منو را در بالای صفحه و محتوای دیگر قرار می‌دهیم */
+      top: 0;
+      right: 0;
+      width: 60%;
+      height: 100%;
+      transform: translateX(100%);
+      transition: transform 0.3s ease;
+  }
+  
+
+  #menuRight.open {
+      transform: translateX(0);
+  }
+
+  /* نمایش دکمه منو در موبایل */
+  #menuToggle {
+      display: block;
+      z-index: 100; /* این دکمه را بالاتر از منو قرار می‌دهیم تا همیشه قابل مشاهده باشد */
+  }
+}
+
+/* حالت تبلت و دسکتاپ (برای اندازه‌های بزرگ‌تر از 767px) */
+@media (min-width: 768px) {
+  #menuRight {
+      position: relative;
+      transform: translateX(0);
+  }
+
+  #menuToggle {
+      display: none; /* مخفی کردن دکمه منو در تبلت و دسکتاپ */
+  }
+}
+
+
+
+
+/* search box */
+
+/* برای دستگاه‌های کوچک (مثل موبایل) */
+@media (max-width: 640px) {
+  #searchBox {
+      position: fixed;
+      top: px;
+      right: 0;
+      left: 0;
+      margin: auto;
+      max-width: 90%; /* کوچک‌تر کردن باکس جستجو در موبایل */
+      background-color: white;
+      z-index: 50;
+      padding: 1rem;
+      border-radius: 0.5rem;
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  #searchBox.hidden {
+      opacity: 0;
+      visibility: hidden;
+  }
+  #searchBox.visible {
+      opacity: 1;
+      visibility: visible;
+  }
+
+  #overlay.hidden {
+      opacity: 0;
+      visibility: hidden;
+  }
+  #overlay.visible {
+      opacity: 1;
+      visibility: visible;
+  }
+}
+
+/* برای دستگاه‌های بزرگ‌تر (مثل دسکتاپ) */
+@media (min-width: 641px) {
+  #searchBox {
+      position: static;
+      display: block;
+      max-width: 100%; /* پر کردن فضای موردنظر در دسکتاپ */
+      background-color: transparent;
+      padding: 0;
+      box-shadow: none;
+  }
+
+  #overlay {
+      display: none; /* حذف حالت تار شدن در دسکتاپ */
+  }
+}
+
+
+
+ 
+
